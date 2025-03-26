@@ -52,7 +52,7 @@
 
 ### 操作视频
 
-<video src="./docs/video.mp4" controls="controls" width="500" height="300"></video>
+<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=114227373148633&bvid=BV1UyoeYFEtZ&cid=29075639251&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
 
 ## 开发过程中遇到的问题
 
