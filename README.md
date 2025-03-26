@@ -52,8 +52,7 @@
 
 ### 操作视频
 
-![](./docs/video.mp4)
-
+<video src="./docs/video.mp4" controls="controls" width="500" height="300"></video>
 
 ## 开发过程中遇到的问题
 
