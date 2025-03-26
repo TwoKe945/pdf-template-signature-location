@@ -1,7 +1,9 @@
 import { defineConfig } from 'vite'
 import Vue from '@vitejs/plugin-vue'
 import AutoImport from 'unplugin-auto-import/vite'
-import Component from 'unplugin-vue-component/vite'
+import Components from 'unplugin-vue-components/vite'
+import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
+import DevTools from 'vite-plugin-vue-devtools'
 
 // https://vite.dev/config/
 export default defineConfig({
@@ -9,10 +11,17 @@ export default defineConfig({
     Vue(),
     AutoImport({
       imports: ['vue'],
-      dts: 'src/types/auto-imports.d.ts'
+      dts: 'src/types/auto-imports.d.ts',
+      resolvers: [ElementPlusResolver()],
     }),
-    Component({
-      dts: 'src/types/components.d.ts'
-    })
+    Components({
+      dts: 'src/types/components.d.ts',
+      resolvers: [ElementPlusResolver()],
+      directoryAsNamespace: true
+    }),
+    DevTools()
   ],
+  build: {
+    sourcemap: true,
+  },
 })

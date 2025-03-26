@@ -1,5 +1,61 @@
-# Vue 3 + TypeScript + Vite
+# 基于PDFJS-DIST + CANVAS的PDF模板签字盖章定位工具
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
 
-Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
+## 学习开源项目
+
+- [pdfjs-dist](https://www.npmjs.com/package/pdfjs-dist) 火狐浏览器PDF预览库
+- [vue-pdf-embed](https://www.npmjs.com/package/vue-pdf-embed) 基于PDFJS-DIST的VUE组件
+- [@tuttarealstep/vue-pdf.js](https://www.npmjs.com/package/@tuttarealstep/vue-pdf.js) 包含完整火狐浏览器PDF预览功能得VUE组件
+
+## 导出数据
+
+```json
+ {
+  "id": "2C1671CB", // 唯一标识符
+  "endX": 515, // canvas绘制结束坐标
+  "endY": 492, // canvas绘制结束坐标
+  "boundingBox": true, // canvas是否显示边界框
+  "boundingBoxColor": "#0000ff", // 边界框颜色
+  "dragingHandleColor": "#000000", // 拖拽句柄颜色
+  "startX": 364, // canvas绘制开始坐标
+  "startY": 341, // canvas绘制开始坐标
+  "color": "#ff0000", // 颜色
+  "isFilled": true, // 是否填充
+  "_type": "seal", // 类型
+  "handleSize": 5, // 句柄大小
+  "group": "630F14CF", // 分组
+  "page": 9, // 位于pdf的页码
+  "remark": "", // 备注信息
+  "x": 364, //位于canvas中的x坐标
+  "y": 341, // 位于canvas中的y坐标
+  "pdfY": 350, // 位于pdf中的y坐标
+  "pdfX": 364 // 位于pdf中的x坐标
+}
+```
+
+
+
+
+## 预览
+
+### 首屏加载
+
+![]('./docs/首页.png')
+
+### PDF预览
+
+![]('./docs/添加手写签和公章.png')
+
+### 添加手写签和公章
+
+![]('./docs/添加手写签和公章.png')
+
+### 操作视频
+
+![]('./docs/video.mp4')
+
+
+## 开发过程中遇到的问题
+
+**<span style="color: red;font-size: 40px">
+unplugin-vue-components 插件不要忘记+s，不要写为‘unplugin-vue-component’！！！</span>**
