@@ -52,7 +52,7 @@
 
 ### 操作视频
 
-<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=114227373148633&bvid=BV1UyoeYFEtZ&cid=29075639251&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+[基于PDFJS-DIST + CANVAS的PDF模板签字盖章定位工具](https://www.bilibili.com/video/BV1UyoeYFEtZ/?vd_source=75530fa0c98edda53ac8b01a1084c7c8)
 
 ## 开发过程中遇到的问题
 
