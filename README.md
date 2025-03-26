@@ -56,5 +56,4 @@
 
 ## 开发过程中遇到的问题
 
-**<span style="color: red;font-size: 40px">
-unplugin-vue-components 插件不要忘记+s，不要写为‘unplugin-vue-component’！！！</span>**
+**unplugin-vue-components 插件不要忘记+s，不要写为‘unplugin-vue-component’！！**
